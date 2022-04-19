@@ -1,0 +1,9 @@
+#contents .container-contents{
+    margin-top: 2em;
+}
+
+@media (max-width: 500px){
+    #contents #decoration-subtitle-contents{
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+
+.animation-arrow{
+    margin-top: 53.83px;
+}
+
+.animation-arrow .container-line{
+    display: flex;
+    gap: 16.3px;
+}
+
+.animation-arrow .container-line div{
+    width: 1.37px;
+    height: 9.42px;
+    background-color: var(--azul-claro);
+}
+.animation-arrow .container-line .lineSelect{
+    width: 3.43px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.animation-arrow .container-line .lineSelect::before{
+    content: '';
+    position: absolute;
+    height: 9.63px;
+    width: 11.12px;
+    background-image: url('../../assets/img/arrow.png');
+    background-repeat: no-repeat;
+    top: -20px;
+}

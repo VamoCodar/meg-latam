@@ -1,0 +1,27 @@
+#principalHeader{
+    position: relative;
+}
+#principalHeader h1{
+    text-transform: uppercase;
+}
+#principalHeader div:first-child{
+    display: flex;
+    justify-content: center;
+}
+
+#principalHeader #digits-animated2{
+    position: absolute;
+    top: 0;
+}
+
+#principalHeader #container-warning{
+    position: absolute;
+    right: 0;
+    top: 12em;
+}
+
+@media (max-width: 800px){
+    #principalHeader #container-warning{
+        display: none;
+    }
+}

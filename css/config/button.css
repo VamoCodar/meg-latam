@@ -1,0 +1,20 @@
+.bt-primary{
+    background-color: var(--azul-claro);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-family: "Bender";
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    max-width: max-content;
+}
+.bt-primary::before{
+    content: "//";
+    padding-right: .5em;
+}
+
+.btActive{
+    color: white !important;
+}

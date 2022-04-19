@@ -1,0 +1,86 @@
+.container-animation-radar{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-radar{
+    background-image: url('../../assets/img/decoration-radar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing:content-box;
+
+    animation-name: arrow-radar;
+    animation-timing-function:ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.animation-radar .radar{
+    position: relative;
+    background-image: url('../../assets/img/radar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80.7px;
+    width: 80.7px;
+}
+
+.animation-radar .radar .cursor-radar{
+    background-image: url('../../assets/img/cursor-radar.png');
+    background-repeat: no-repeat;
+    background-size: calc(80.7px/2);
+    height: 100%;
+    width: 100%;
+
+    animation-name: radar;
+    animation-timing-function:linear;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+@media(max-width: 900px){
+    .container-animation-radar{
+        display: none;
+    }
+}
+
+
+
+@keyframes radar{
+    0%{
+        transform: rotate(0deg);
+        -ms-transform:rotate(0deg); /* IE 9 */
+        -moz-transform:rotate(0deg); /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari and Chrome */
+        -o-transform:rotate(0deg); /* Opera */
+    }
+    100%{
+        transform: rotate(360deg);
+        -ms-transform:rotate(360deg); /* IE 9 */
+        -moz-transform:rotate(360deg); /* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari and Chrome */
+        -o-transform:rotate(360deg); /* Opera */
+    }
+}
+
+@keyframes arrow-radar{
+    0%{
+        width: 90px;
+        height: 90px;
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        width: 90px;
+        height: 90px;
+    }
+}

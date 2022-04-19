@@ -1,0 +1,53 @@
+.graphics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.44px;
+}
+
+.container-graphic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-graphic div{
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+    background-image: url('../../assets/img/circle.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.container-graphic p{
+    position: absolute;
+    color: var(--azul-claro);
+    font-family: "Bender";
+}
+
+.animationCircle1{
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.animationCircle2{
+    animation-name: circle;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle{
+    0%{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg); /* IE 9 */
+        -moz-transform:rotate(0deg); /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari and Chrome */
+        -o-transform:rotate(0deg); /* Opera */
+    }
+    100%{
+        transform: rotate(360deg);
+        -ms-transform:rotate(360deg); /* IE 9 */
+        -moz-transform:rotate(360deg); /* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari and Chrome */
+        -o-transform:rotate(360deg); /* Opera */
+    }
+}

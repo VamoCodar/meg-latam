@@ -1,0 +1,46 @@
+#prize-pool{
+    position: relative;
+}
+
+#prize-pool .container-prize-pool{
+    margin-top: 2em;
+}
+
+
+#prize-pool .container-prize-pool .value-award-prize-pool p{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+#prize-pool .container-prize-pool .p-prize-pool p{
+    margin-top: 2em;
+    text-transform: uppercase;
+    max-width: 58ch;
+    letter-spacing: 0.15em;
+    line-height: 40px;
+}
+
+#prize-pool #container-warning{
+    position: absolute;
+    right: 4em;
+    top: 1em;
+}
+
+@media (max-width: 800px){
+    #prize-pool #container-warning{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    #prize-pool .container-prize-pool .value-award-prize-pool p{
+        text-align: center;
+    }
+    #prize-pool .container-prize-pool .value-award-prize-pool p:first-child{
+        text-align:start;
+        margin-left: 10%;
+    }
+}

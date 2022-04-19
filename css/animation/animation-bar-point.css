@@ -1,0 +1,156 @@
+.animation-bar-point{
+    position: relative;
+    width: 80%;
+    height: 24px;
+    border: 0.031rem solid var(--azul-claro);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.barLine{
+    width: 93%;
+    height: 2px;
+    background-color: var(--azul-claro);
+    margin-left: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.barLineFull{
+    position: absolute;
+    height: 5px;
+    background-color: var(--azul-claro);
+    margin-left: 10px;
+    border-radius: 2px;
+
+    animation-name: move-bar-line;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.group-bar-point{
+    position: absolute;
+    width: 100%;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.group-bar-point div{
+    width: 10px;
+    height: 10px;
+    background-color: var(--azul-claro);
+    border-radius: 50%;
+    color: var(--azul-claro);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.875em;
+    
+}
+
+.group-bar-point div:nth-child(1)::before{
+    content: "2500";
+    font-family: "Bender";
+    position: absolute;
+    margin-top: 2em;
+}
+
+.group-bar-point div:nth-child(2)::before{
+    content: "5000";
+    font-family: "Bender";
+    position: absolute;
+    margin-top: 2em;
+}
+
+.group-bar-point div:nth-child(3)::before{
+    content: "10000";
+    font-family: "Bender";
+    position: absolute;
+    margin-top: 2em;
+}
+
+.group-bar-point div:nth-child(4)::before{
+    content: "12500";
+    font-family: "Bender";
+    position: absolute;
+    margin-top: 2em;
+}
+
+.group-bar-point div:nth-child(5)::before{
+    content: "15000";
+    font-family: "Bender";
+    position: absolute;
+    margin-top: 2em;
+}
+
+.group-bar-point div:nth-child(6)::before{
+    content: "17500";
+    font-family: "Bender";
+    position: absolute;
+    margin-top: 2em;
+}
+
+.group-bar-point div:nth-child(7)::before{
+    content: "20000";
+    font-family: "Bender";
+    position: absolute;
+    margin-top: 2em;
+}
+
+
+@keyframes move-bar-line{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 93%;
+    }
+    100%{
+        width: 0%;
+    }
+
+}
+
+@media(max-width: 700px){
+    .group-bar-point div:nth-child(1)::before{
+        font-size: 10px;
+        margin-top: 3em;
+    }
+    .group-bar-point div:nth-child(2)::before{
+        font-size: 10px;
+        margin-top: 3em;
+    }
+    .group-bar-point div:nth-child(3)::before{
+        font-size: 10px;
+        margin-top: 3em;
+    }
+    .group-bar-point div:nth-child(4)::before{
+        font-size: 10px;
+        margin-top: 3em;
+    }
+    .group-bar-point div:nth-child(5)::before{
+        font-size: 10px;
+        margin-top: 3em;
+    }
+    .group-bar-point div:nth-child(6)::before{
+        font-size: 10px;
+        margin-top: 3em;
+    }
+    .group-bar-point div:nth-child(7)::before{
+        font-size: 10px;
+        margin-top: 3em;
+    }
+}
+
+@media(max-width: 500px){
+    .group-bar-point div:nth-child(even){
+        display: none;
+    }
+    .group-bar-point{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

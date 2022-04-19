@@ -1,0 +1,38 @@
+@import url('./config/config.css');
+@import url('./cores/color.css');
+@import url('./fonts/configFonts.css');
+@import url('./config/button.css');
+@import url('./config/slick.css');
+@import url('./config/slide.css');
+
+
+
+@import url('./header/header.css');
+@import url('./header/nav.css');
+
+
+/* CSS para estilização de animação */
+@import url('./animation/configAnimations.css');
+@import url('./animation/animation-arrow.css');
+@import url('./animation/animation-graphic-circle.css');
+@import url('./animation/animation-radar.css');
+@import url('./animation/animation-group-bar.css');
+@import url('./animation/animation-bar-point.css');
+@import url('./animation/animation-graphic.css');
+@import url('./animation/animation-loading.css');
+
+
+@import url('./articles/principal-header.css');
+
+/* Estilização das Sessões */
+@import url('./sections/about-us.css');
+@import url('./sections/sponsors.css');
+@import url('./sections/contact.css');
+@import url('./sections/contents.css');
+@import url('./sections/general-championship.css');
+@import url('./sections/modalities.css');
+@import url('./sections/brackets.css');
+@import url('./sections/prize-pool.css');
+
+
+@import url('./footer/directors.css');

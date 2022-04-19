@@ -1,0 +1,106 @@
+#general-championship .general-championship-container{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#general-championship .general-championship-container .container-phase div h3{
+    padding: 4px 12px;
+    background-color: var(--azul-claro);
+    opacity: 0.5;
+    text-transform: uppercase;
+    width: max-content;
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+}
+
+#general-championship .general-championship-container .container-phase div p{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+#general-championship .general-championship-container .container-phase{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#general-championship .general-championship-container .container-phase::after{
+    content: ">";
+    color: var(--azul-claro);
+    font-size: 2.5rem;
+    position: absolute;
+    right: 1em;
+
+    transition: 1s;
+}
+
+#general-championship .general-championship-container .container-phase:hover::after{
+    right: 0;
+}
+
+#general-championship .general-championship-container .container-phase:last-child::after{
+    content: "";
+}
+
+
+#general-championship .general-championship-arrows{
+    width: 100%;
+}
+
+#general-championship .general-championship-arrows .swiper .swiper-wrapper .swiper-slide div::after{
+    content: ">";
+    color: var(--azul-claro);
+    opacity: 0.1;
+    font-size: 3.5rem;
+    font-family: 'Bender';
+}
+
+
+@media (max-width: 1000px){
+    #general-championship .general-championship-container .container-phase div p{
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 800px){
+    #general-championship .general-championship-container .container-phase div p{
+        line-height: 30px;
+    }
+    #general-championship .general-championship-container .container-phase::after{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 700px){
+    #general-championship .general-championship-container .container-phase div p{
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    #general-championship .general-championship-container .container-phase::after{
+        font-size: 1.2rem;
+    }
+    #general-championship .general-championship-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #general-championship .general-championship-container .container-phase:nth-child(2)::after{
+        content: "";
+    }
+    
+}
+
+
+@media (max-width: 500px){
+    #general-championship #decoration-subtitle-general-championship{
+        display: none;
+    }
+    #general-championship .general-championship-arrows .swiper .swiper-wrapper .swiper-slide div::after{
+        font-size: 2rem;
+    }
+}

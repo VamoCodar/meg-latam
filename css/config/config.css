@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+body{
+    background-image: url('../../assets/background/bg.png');
+}
+
+
+main{
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 95px;
+}
+footer{
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+.topSection{
+	margin-top: 140px;
+}
+
+.container-padding{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.decoration-subtitle{
+	margin-top: 10px;
+	margin-left: 2%;
+	display: inline-block;
+}
+
+
+
+/** Carrossel **/
+.pure-js-carousel { overflow: hidden; }
+.pure-js-carousel-list:before, .pure-js-carousel-list:after {
+  content: "";
+  display: table;
+}
+.pure-js-carousel-list:after { clear: both; }
+.pure-js-carousel-slide { float: left; }
+.pure-js-carousel-btn {
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+	cursor: pointer;
+	height: 20px;
+	margin-top: -35px;
+	position: absolute;
+	top: 50%;
+	width: 20px;
+  }
+  .pure-js-carousel-btn-next {
+	border-bottom: 3px solid #f00;
+	border-right: 3px solid #f00;
+	right: 5px;
+	-moz-transform: rotate(315deg);
+	-webkit-transform: rotate(315deg);
+	transform: rotate(315deg);
+  }
+  .pure-js-carousel-btn-prev {
+	border-bottom: 3px solid #f00;
+	border-left: 3px solid #f00;
+	left: 5px;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+  .pure-js-carousel-dots {
+	float: left;
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+  }
+  .pure-js-carousel-dot {
+	display: inline-block;
+	margin: 0 5px;
+  }
+  .pure-js-carousel-dot-btn {
+	background: green;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+  }
+  .active .pure-js-carousel-dot-btn {
+	background: blue;
+  }
+
+
+
+@media (max-width: 600px){
+	.container-padding{
+		padding: 0;
+	}
+	.topSection{
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 400px){
+	main{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+

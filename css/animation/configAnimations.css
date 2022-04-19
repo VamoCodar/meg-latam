@@ -1,0 +1,19 @@
+.container-animation-header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 120px;
+}
+.container-animation-header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-animation-header > div:first-child{
+    gap: 80px;
+}
+.container-animation-header > div:nth-child(3){
+    gap: 30px;
+}
+
+
+

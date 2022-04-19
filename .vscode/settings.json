@@ -1,0 +1,32 @@
+{
+    //
+    //SASS COMPILER SETTINGS ============================================
+    "liveSassCompile.settings.formats": [{
+        "format": "compressed", //compressed or expanded 
+        "extensionName": ".compilado.css",
+        "savePath": "/css" //diretorio para salvar o arquivo .css
+    }],
+    //força pasta para compilar
+    // "liveSassCompile.settings.forceBaseDirectory": [
+
+    // ],
+    "liveSassCompile.settings.includeItems": [
+        "/scss/main.scss"
+
+
+    ],
+
+
+
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [
+        "> 2%",
+        // "last 2 versions"
+    ],
+
+    //nao mostra a barra || ctrl+shift+u
+    "liveSassCompile.settings.showOutputWindowOn": "Error",
+    "scss.showErrors": true,
+    // "workbench.colorTheme": "Dark Material Dracula"
+
+}

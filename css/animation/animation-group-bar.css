@@ -1,0 +1,198 @@
+.animation-group-bar{
+    display: flex;
+    align-items: end;
+    gap: 5.5px;
+}
+.bar:nth-child(1){
+    position: relative;
+    height: 50px;
+    width: 5.87px;
+    background-color: rgba(0, 255, 255, 0.25);
+    display: flex;
+    align-items: end;
+}
+.bar:nth-child(1) .status-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 52%;
+    width: 100%;
+    background-color: var(--azul-claro);
+
+    animation-name: animation-bar-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bar:nth-child(2){
+    position: relative;
+    height: 40px;
+    width: 5.87px;
+    background-color: rgba(0, 255, 255, 0.25);
+    display: flex;
+    align-items: end;
+}
+.bar:nth-child(2) .status-bar{
+    height: 45%;
+    width: 100%;
+    background-color: var(--azul-claro);
+
+    animation-name: animation-bar-2;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bar:nth-child(3){
+    position: relative;
+    height: 32px;
+    width: 5.87px;
+    background-color: rgba(0, 255, 255, 0.25);
+    display: flex;
+    align-items: end;
+}
+.bar:nth-child(3) .status-bar{
+    height: 60%;
+    width: 100%;
+    background-color: var(--azul-claro);
+
+    animation-name: animation-bar-3;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bar:nth-child(4){
+    position: relative;
+    height: 55px;
+    width: 5.87px;
+    background-color: rgba(0, 255, 255, 0.25);
+    display: flex;
+    align-items: end;
+}
+.bar:nth-child(4) .status-bar{
+    height: 60%;
+    width: 100%;
+    background-color: var(--azul-claro);
+
+    animation-name: animation-bar-4;
+    animation-duration: 1.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bar:nth-child(5){
+    position: relative;
+    height: 30px;
+    width: 5.87px;
+    background-color: rgba(0, 255, 255, 0.25);
+    display: flex;
+    align-items: end;
+}
+.bar:nth-child(5) .status-bar{
+    height: 40%;
+    width: 100%;
+    background-color: var(--azul-claro);
+
+    animation-name: animation-bar-5;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes animation-bar-1{
+    0%{
+        height: 52%; 
+    }
+    25%{
+        height: 100%;
+    }
+    50%{
+        height: 52%;
+    }
+    75%{
+        height: 0%;
+    }
+    100%{
+        height: 52%;
+    }
+
+}
+
+@keyframes animation-bar-2{
+    0%{
+        height: 45%; 
+    }
+    25%{
+        height: 0%;
+    }
+    50%{
+        height: 45%;
+    }
+    75%{
+        height: 100%;
+    }
+    100%{
+        height: 45%;
+    }
+
+}
+
+@keyframes animation-bar-3{
+    0%{
+        height: 60%; 
+    }
+    25%{
+        height: 100%;
+    }
+    50%{
+        height: 60%;
+    }
+    75%{
+        height: 0%;
+    }
+    100%{
+        height: 60%;
+    }
+
+}
+
+@keyframes animation-bar-4{
+    0%{
+        height: 60%; 
+    }
+    25%{
+        height: 0%;
+    }
+    50%{
+        height: 60%;
+    }
+    75%{
+        height: 100%;
+    }
+    100%{
+        height: 60%;
+    }
+
+}
+
+@keyframes animation-bar-5{
+    0%{
+        height: 40%; 
+    }
+    25%{
+        height: 100%;
+    }
+    50%{
+        height: 40%;
+    }
+    75%{
+        height: 0%;
+    }
+    100%{
+        height: 40%;
+    }
+
+}

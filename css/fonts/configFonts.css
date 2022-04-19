@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Bender";
+    src: local('Bender'), url('../../fonte/bender.regular.otf');
+}
+
+.font-title-sections{
+    font-family: "Bender";
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--azul-claro);
+}
+
+/* Familia da Fonte */
+.font-family-bender{
+    font-family: "Bender";  
+}
+
+
+/* Cor da Fonte */
+.font-color-white{
+    color: #ffffff;
+}
+
+.font-color-blue-white{
+    color: var(--azul-claro);
+}
+
+
+/* Tamanhos da Fonte */
+.font-size-14{
+    font-size: 0.875rem;
+}
+
+.font-size-16{
+    font-size: 1rem;
+}
+
+.font-size-18{
+    font-size: 1.125rem;
+}
+
+.font-size-20{
+    font-size: 1.25rem;
+}
+
+.font-size-24{
+    font-size: 1.5rem;
+}
+
+.font-size-28{
+    font-size: 1.75rem;
+}
+
+.font-size-30{
+    font-size: 1.875rem;
+}
+
+.font-size-32{
+    font-size: 2rem;
+}
+
+.font-size-40{
+    font-size: 2.5rem;
+}
+
+.font-size-100{
+    font-size: 6.25rem;
+}
+
+.font-size-200{
+    font-size: 12.5rem;
+}
+
+@media (max-width: 1000px){
+    
+    .font-size-40{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 900px){
+    .font-size-200{
+        font-size: 10.5rem;
+    }
+
+    .font-size-100{
+        font-size: 5rem;
+    }
+    
+    .font-size-40{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 800px){
+    .font-title-sections{
+        font-size: 2.175rem;
+    }
+
+    .font-size-200{
+        font-size: 7rem;
+    }
+
+    
+    .font-size-100{
+        font-size: 3.125rem;
+    }
+    .font-size-40{
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .font-size-40{
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+@media (max-width: 600px){
+    .font-title-sections{
+        text-align: center;
+        font-size: 1.55rem;
+    }
+    .font-size-24{
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 20px !important;
+    }
+    .font-size-100{
+        font-size: 1.875rem;
+    }
+    
+    .font-size-40{
+        font-size: 1rem;
+    }
+
+    .font-size-16{
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .font-size-200{
+        font-size: 4rem;
+    }
+}
+/*
+@media (max-width: 500px){
+    
+    .font-size-40{
+        font-size: 0.8rem;
+    }
+    .font-size-16{
+        font-size: 0.6rem;
+    }
+    
+}
+
+
+@media (max-width: 400px){
+    .font-size-100{
+        text-align: center;
+        font-size: 1.875rem;
+    }
+    .font-size-24{
+        font-size: 0.875rem;
+        line-height: 15px !important;
+    }
+    
+}
+*/

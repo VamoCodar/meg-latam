@@ -1,0 +1,99 @@
+#directors{
+    padding-bottom: 240px;
+    position: relative;
+
+    background-image: url('../../assets/img/ondas.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 0 bottom;
+}
+#directors .directors-achievement{
+    margin-top: 240px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#directors .containerImgDirectors{
+    display: flex;
+    justify-content: end;
+    margin-top: 3em;
+}
+#directors .containerImgDirectors figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#directors .directors-circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--azul-claro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    left: -25px;
+    top: -25px;
+}
+
+#directors .directors-circle .directors-small-circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--azul-claro);
+}
+
+#directors .directors-line{
+    width: 300px;
+    height: 2px;
+    background-color: var(--azul-claro);
+    position: relative;
+    margin-left: -140px;
+}
+
+#directors img{
+    max-width: 200px;
+    height: auto;
+}
+
+.directors-achievement p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.directors-achievement p::before{
+    content: "//";
+}
+
+@media(max-width: 700px){
+    #directors .containerImgDirectors{
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #directors .containerImgDirectors figure{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    #directors .directors-line{
+        width: 200px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 400px){
+    #directors .containerImgDirectors figure img{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Source\\": "Source/"
+        }
+    },
+    "require": {
+        "htmlburger/carbon-fields": "^3.3"
+    },
+    "extra": {
+        "installer-paths": {
+            "LEMI/vendor/{$vendor}/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}

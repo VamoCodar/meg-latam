@@ -1,0 +1,27 @@
+.sponsors-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.sponsors-img img{
+    max-width: 120px;
+    height: auto;
+}
+
+.slide-parceiros-1{
+    margin-top: 80px;
+}
+
+@media(max-width: 500px){
+    .sponsors-img{
+        height: 100px;
+    }
+    .sponsors-img img{
+        max-width: 100px;
+        height: auto;
+    }
+    .slide-parceiros-1{
+        margin-top: 34px;
+    }
+}
